@@ -1,0 +1,26 @@
+{
+  "files": {
+    "src/App.js": [
+      {
+        "id": "5f62ae02-1a4e-4ed4-a474-fe06a6c5d548",
+        "line": 5,
+        "version": 2083,
+        "index": 149
+      },
+      {
+        "id": "d6593981-e73d-4afd-8b64-5d236ce2eaf8",
+        "line": 5,
+        "version": 2083,
+        "index": 149
+      }
+    ],
+    "src/components/Connect.js": [
+      {
+        "id": "a4aa8116-37f1-4524-8cd2-7ebb014f81ed",
+        "line": 2,
+        "version": 69,
+        "index": 27
+      }
+    ]
+  }
+}
