@@ -6,22 +6,24 @@ import QuoteSection from './components/QuoteSection';
 
 
 export default function App() {
+
   return (
     <div className="mainContainer">
-      <div className="dataContainer">
+      <div className='container'>
         <div className="header">
-            <span role="img">👋 </span> Hey there!
+            <span role="img">👋 </span>   Hey there, send a quote and probably win a fake ethereum
         </div>
-        <section>
-          <QuoteForm />
-        </section>
-        <section>
-          <QuoteSection />
-        </section>
+        <div className="social-link">
+        lets connect on socials:
+        <a href="http://www.twitter.com/__tbello"> Twitter</a>
+        <a href="http://www.github.com/t-bello7">Github</a>
+        <a href="https://www.linkedin.com/in/tbello7">Linkedin</a>
       </div>
-        <section>
-          <Connect />
-        </section>
+      </div>
+        <Connect />
+        <QuoteForm />
+        <QuoteSection />  
+   
     </div>
   );
   }

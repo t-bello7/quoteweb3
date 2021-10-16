@@ -61,12 +61,14 @@ export default function Connect() {
     checkIfWalletIsConnected();
   }, [])
   return (
-    <div>
-      <p> Connect your wallet </p>
+    <div className="container">
         {!currentAccount && (
-          <button className="waveButton" onClick={connectWallet}>
-            Connect Wallet
-        </button>
+            <div>
+            <p> Connect your wallet </p>
+            <button className="waveButton" onClick={connectWallet}>
+                   Connect Wallet
+            </button>
+            </div>
         )}
     </div>
   )
