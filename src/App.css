@@ -127,13 +127,7 @@ li {
 }
 .quote__form {
   margin-top: 3rem;
-  width: 600px;
-}
-
-.quote__form:first-child {
-  box-sizing: border-box;
-  line-height: 1.5;
-  width: 600px;
+  width: 100%;
 }
 
 .form__field {

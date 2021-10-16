@@ -54,7 +54,7 @@ export default function QuoteForm() {
     <div className='container'>
       <form className="quote__form" onSubmit={writeQuotes} ref={form}>
         <div className="form__field">
-          <input type="textarea" name="quote" id='form__input' placeholder="Send a quote..." ref={formInput} onKeyPressCapture={enableNewline}  autoComplete="off" onChange={handleQuoteChange}/>
+          <input type="textarea" name="quote" id='form__input' placeholder="Send a quote and probably win 0.0001 ethers..." ref={formInput} onKeyPressCapture={enableNewline}  autoComplete="off" onChange={handleQuoteChange}/>
         </div>
         <div className="progress-button">
           <button className="waveButton">Submit</button>

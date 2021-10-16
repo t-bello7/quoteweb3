@@ -11,13 +11,13 @@ export default function App() {
     <div className="mainContainer">
       <div className='container'>
         <div className="header">
-            <span role="img">👋 </span>   Hey there, send a quote and probably win a fake ethereum
+            {/* <span role="img"></span>   Hey there, send a quote and probably win a fake ethereum */}
+            👋 Hey there, I'm Tomi a software developer currently building with Python and Javascipt <br/>
+            Check out my first app on web3.
         </div>
-        <div className="social-link">
-        lets connect on socials:
-        <a href="http://www.twitter.com/__tbello"> Twitter</a>
-        <a href="http://www.github.com/t-bello7">Github</a>
-        <a href="https://www.linkedin.com/in/tbello7">Linkedin</a>
+      <div className="social-link">
+        connect with me on Twitter:
+        <a href="http://www.twitter.com/__tbello">__tbello</a>
       </div>
       </div>
         <Connect />
