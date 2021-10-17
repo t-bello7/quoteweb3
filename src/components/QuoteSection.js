@@ -1,4 +1,4 @@
-import React, {  useState, useEffect} from "react";
+import React, {  useState, useEffect, useCallback} from "react";
 import '../App.css';
 import { ethers } from "ethers";
 import abi from '../utils/QuotePortal.json';
@@ -14,13 +14,9 @@ export default function QuoteSection() {
   // create a variable here that refernces the abi content!
   const contractABI = abi.abi;
 
-  useEffect(() =>{
-    getAllQuotes();
-  },);
 
 
-
-  const getAllQuotes = async () => {
+  const getAllQuotes = useCallback(async () => {
     try {
       const { ethereum } = window;
       if (window.ethereum) {
@@ -76,7 +72,11 @@ export default function QuoteSection() {
     catch (error){
       console.log(error);   
     }
-  }
+  },[contractABI, contractAddress])
+  useEffect(() =>{
+    getAllQuotes();  
+  },[getAllQuotes]);
+
 
   return (
     <div className='container' onLoad={getAllQuotes}>
